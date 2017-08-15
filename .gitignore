@@ -1,10 +1,14 @@
 
 # Created by https://www.gitignore.io/api/ruby,macos
 
+## custom ##
+unit-tests.xml
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
 .LSOverride
+
 
 # Icon must end with two \r
 Icon

@@ -6,7 +6,7 @@ require 'sinatra/reloader' if development?
 require_relative 'endpoints/posts'
 
 # Rota padrão
-get '/' do
+get '/' do  
   @env = ENV['RACK_ENV'].to_s.upcase
-  "Welcome to nBlog API v2.0 | Environment: #{@env}."
+  "Welcome to nBlog API v2.1 | Environment: #{@env}."
 end
