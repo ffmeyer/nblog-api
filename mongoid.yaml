@@ -22,7 +22,7 @@ uat:
         default:
             database: nblog-uat
             hosts:
-                - 's153123.mlab.com:53123'
+                - 'ds153123.mlab.com:53123'
             options:
                 user: uat-app
                 password: uat#123
