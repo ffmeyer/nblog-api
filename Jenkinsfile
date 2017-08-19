@@ -1,7 +1,7 @@
 node {
     try {
         stage('Build') {
-            git credentialsId: '270b889b-fbdc-4ff9-978f-48a39f0e296d', url: 'git@github.com:papitoio/nblog-api.git'
+            git credentialsId: '83edbe93-3f96-4586-aa6b-6f7119472c06', url: 'git@github.com:ffmeyer/nblog-api.git'
             env.RACK_ENV = 'development'
             ruby('bundle install --with test')
             ruby('rspec --format progress --format RspecJunitFormatter --out results/rspec.xml')
