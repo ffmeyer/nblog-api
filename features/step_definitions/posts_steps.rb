@@ -76,3 +76,14 @@
     get '/api/posts/' + @post_id.to_s
     expect_status(404)
   end
+
+
+##erros
+
+Dado(/^que o usuario selecionou um artigo para visualização$/) do
+  post_id = "0000"
+end
+
+Quando(/^o módulo\tadmin enviar um GET desse argio para o serviço Posts`$/) do
+  get '/api/posts/' + @post_id.to_s
+end
