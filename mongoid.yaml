@@ -25,4 +25,14 @@ uat:
                 - 's153123.mlab.com:53123'
             options:
                 user: uat-app
-                password: uat#123                
+                password: uat#123
+
+production:
+    clients:
+        default:
+            database: nblog-prod
+            hosts:
+                - 'ds153123.mlab.com:53123s'
+            options:
+                user: prod-app
+                password: prod#123                                
