@@ -15,6 +15,6 @@ Funcionalidade: Listar artigos
     Cenário: Listar unico artigo 
         Dado que o usuario selecionou um artigo para visualização
         Quando o módulo	admin enviar um GET desse argio para o serviço Posts`
-        Então o código de resposta deve ser "200"
+        Então o código de resposta deve ser "404"
 
         
