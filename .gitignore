@@ -5,6 +5,8 @@
 unit-tests.xml
 features.html
 features.json
+results/*.json
+results/*.xml
 
 ### macOS ###
 *.DS_Store
