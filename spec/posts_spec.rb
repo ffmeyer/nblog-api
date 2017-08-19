@@ -21,7 +21,7 @@ describe 'nblog Api' do
     describe 'STATUS 200' do
       it 'returns a list of posts' do
         get '/api/posts'
-        expect_status(201)
+        expect_status(200)
         expect_json_types('*', title: :string, body: :string)
       end
     end
