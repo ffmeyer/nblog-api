@@ -3,6 +3,8 @@
 
 ## custom ##
 unit-tests.xml
+features.html
+features.json
 
 ### macOS ###
 *.DS_Store
