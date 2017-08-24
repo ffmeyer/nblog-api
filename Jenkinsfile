@@ -26,8 +26,19 @@ node {
             ruby('cucumber -p uat --tag @smoke')
         }
         stage('Promote to Production') {
-            deploy_prod()
-            ruby('cucumber -p production --tag @smoke')
+            //this if else works only on blue ocean implementation
+            def returnValue = input message: 'Deseja promover este build para produção?', parameters: [string(defaultValue: 'Sim', description: '', name: 'Sim ou Nao')]
+
+            if (returnValue == 'Sim'){
+                deploy_prod()
+                ruby('cucumber -p production --tag @smoke')
+            }else{
+                echo 'Not approved'
+                return;
+            }
+
+
+            
         }
     }
     catch (err) {
